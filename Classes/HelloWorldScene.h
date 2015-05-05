@@ -10,6 +10,7 @@ class HelloWorld : public cocos2d::Layer
     
 public:
     Vector<Sprite*> ballList;
+    std::vector<std::string> imageNames;
     cocos2d::Size winSize;
     void addEdges();
     void testAddBalls();

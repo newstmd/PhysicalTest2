@@ -33,6 +33,13 @@ bool HelloWorld::init()
     {
         return false;
     }
+    imageNames.push_back("ball1.png");
+    imageNames.push_back("ball2.png");
+    imageNames.push_back("ball3.png");
+    imageNames.push_back("ball4.png");
+    imageNames.push_back("ball5.png");
+    
+    
     winSize = Director::getInstance()->getVisibleSize();
     auto rootNode = CSLoader::createNode("MainScene.csb");
 
@@ -86,10 +93,13 @@ void HelloWorld::testAddBalls(){
 }
 
 void HelloWorld::addBall(float positionX, float positionY){
-    auto newBall = Sprite::create("ball.png");
+    int rand = arc4random() % 5 ;
+    std::string imageName = imageNames.at(rand);
+    
+    auto newBall = Sprite::create(imageName);
     newBall->setPosition(positionX,positionY);
     auto ballBody = PhysicsBody::createCircle(newBall->getContentSize().width/2);
-    ballBody->setVelocity(Vec2(0.0f,-200.0f));
+    ballBody->setVelocity(Vec2(0.0f,-100.0f));
         newBall->setPhysicsBody(ballBody);
     
     ballList.pushBack(newBall);

@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		062DF3C01AF6F621009B71FC /* ball.png in Resources */ = {isa = PBXBuildFile; fileRef = 062DF3BF1AF6F621009B71FC /* ball.png */; };
+		06A84A2B1AF8A51B002201B6 /* ball4.png in Resources */ = {isa = PBXBuildFile; fileRef = 06A84A261AF8A51B002201B6 /* ball4.png */; };
+		06A84A2C1AF8A51B002201B6 /* ball2.png in Resources */ = {isa = PBXBuildFile; fileRef = 06A84A271AF8A51B002201B6 /* ball2.png */; };
+		06A84A2D1AF8A51B002201B6 /* ball1.png in Resources */ = {isa = PBXBuildFile; fileRef = 06A84A281AF8A51B002201B6 /* ball1.png */; };
+		06A84A2E1AF8A51B002201B6 /* ball3.png in Resources */ = {isa = PBXBuildFile; fileRef = 06A84A291AF8A51B002201B6 /* ball3.png */; };
+		06A84A2F1AF8A51B002201B6 /* ball5.png in Resources */ = {isa = PBXBuildFile; fileRef = 06A84A2A1AF8A51B002201B6 /* ball5.png */; };
 		06A86FF21AF7BE4B00FB9D80 /* Ball.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 06A86FF01AF7BE4B00FB9D80 /* Ball.cpp */; };
 		06A86FF31AF7BE4B00FB9D80 /* Ball.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 06A86FF01AF7BE4B00FB9D80 /* Ball.cpp */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
@@ -66,6 +71,11 @@
 
 /* Begin PBXFileReference section */
 		062DF3BF1AF6F621009B71FC /* ball.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ball.png; sourceTree = "<group>"; };
+		06A84A261AF8A51B002201B6 /* ball4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ball4.png; sourceTree = "<group>"; };
+		06A84A271AF8A51B002201B6 /* ball2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ball2.png; sourceTree = "<group>"; };
+		06A84A281AF8A51B002201B6 /* ball1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ball1.png; sourceTree = "<group>"; };
+		06A84A291AF8A51B002201B6 /* ball3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ball3.png; sourceTree = "<group>"; };
+		06A84A2A1AF8A51B002201B6 /* ball5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ball5.png; sourceTree = "<group>"; };
 		06A86FF01AF7BE4B00FB9D80 /* Ball.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Ball.cpp; sourceTree = "<group>"; };
 		06A86FF11AF7BE4B00FB9D80 /* Ball.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ball.h; sourceTree = "<group>"; };
 		1ACB3243164770DE00914215 /* libcurl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcurl.a; path = ../../cocos2dx/platform/third_party/ios/libraries/libcurl.a; sourceTree = "<group>"; };
@@ -240,6 +250,11 @@
 		46880B7519C43A67006E1F66 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				06A84A261AF8A51B002201B6 /* ball4.png */,
+				06A84A271AF8A51B002201B6 /* ball2.png */,
+				06A84A281AF8A51B002201B6 /* ball1.png */,
+				06A84A291AF8A51B002201B6 /* ball3.png */,
+				06A84A2A1AF8A51B002201B6 /* ball5.png */,
 				062DF3BF1AF6F621009B71FC /* ball.png */,
 				E4E9495E93D700EF88A10783 /* res */,
 			);
@@ -393,10 +408,14 @@
 			files = (
 				5087E78117EB970100C73F5D /* Icon-120.png in Resources */,
 				5087E78617EB970100C73F5D /* Icon-76.png in Resources */,
+				06A84A2D1AF8A51B002201B6 /* ball1.png in Resources */,
 				5087E77F17EB970100C73F5D /* Default@2x.png in Resources */,
 				50EF629917ECD46A001EB2F8 /* Icon-100.png in Resources */,
 				5087E78317EB970100C73F5D /* Icon-152.png in Resources */,
+				06A84A2C1AF8A51B002201B6 /* ball2.png in Resources */,
 				5087E77D17EB970100C73F5D /* Default-568h@2x.png in Resources */,
+				06A84A2F1AF8A51B002201B6 /* ball5.png in Resources */,
+				06A84A2B1AF8A51B002201B6 /* ball4.png in Resources */,
 				062DF3C01AF6F621009B71FC /* ball.png in Resources */,
 				5087E78517EB970100C73F5D /* Icon-72.png in Resources */,
 				521A8E6519F0C34300D177D7 /* Default-736h@3x.png in Resources */,
@@ -406,6 +425,7 @@
 				50EF629617ECD46A001EB2F8 /* Icon-40.png in Resources */,
 				5087E78217EB970100C73F5D /* Icon-144.png in Resources */,
 				50EF629817ECD46A001EB2F8 /* Icon-80.png in Resources */,
+				06A84A2E1AF8A51B002201B6 /* ball3.png in Resources */,
 				5087E78417EB970100C73F5D /* Icon-57.png in Resources */,
 				5087E77E17EB970100C73F5D /* Default.png in Resources */,
 				521A8E6419F0C34300D177D7 /* Default-667h@2x.png in Resources */,
