@@ -62,24 +62,33 @@ void HelloWorld::beginNewGame(){
 
 
 bool HelloWorld::touchIt(Touch* touch,Event* event){
+    //Director::getInstance()->stopAnimation();
     selectedBalls.clear();
     auto clickLocation = touch->getLocation();
     
-    for (int i = 0; i<ballList.size(); i++) {
+    for (int i = 0; i<ballList.size(); i++)
+    {
         auto tar = ballList.at(i);
-        if (HelloWorld::getjuli(clickLocation, tar->getPosition()) < tar->getContentSize().width/2) {
-                        chuliBall(tar);
-            if (selectedBalls.size()>1) {
-                for (int i = 0; i<selectedBalls.size(); i++) {
+        if (HelloWorld::getjuli(clickLocation, tar->getPosition()) < tar->getContentSize().width/2)
+        {
+            chuliBall(tar);
+            if (selectedBalls.size()>1)
+            {
+                for (int i = 0; i<selectedBalls.size(); i++)
+                {
                     removeChild(selectedBalls.at(i));
+                    ballList.eraseObject(selectedBalls.at(i));
                 }
 
             }
-            selectedBalls.clear();
-                        break;
+            break;
+            
         }
-            }
-        return true;
+    }
+    //Director::getInstance()->startAnimation();
+    log("消除%zd个",selectedBalls.size());
+    log("还剩%zd个球球",ballList.size());
+    return true;
 }
 
 void HelloWorld::testAddBalls(){
@@ -145,7 +154,7 @@ bool HelloWorld::isNear(cocos2d::Sprite *s1, cocos2d::Sprite *s2){
     float y1 = s1->getPosition().y;
     float y2 = s2->getPosition().y;
     float juli = sqrt((x1-x2)*(x1-x2) + (y1-y2)*(y1-y2));
-    if (juli > (s1->getContentSize().width)) {
+    if (juli > (s1->getContentSize().width+1)) {
         return false;
     }
     return true;
